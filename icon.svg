@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<rect width="512" height="512" rx="112" fill="#123f32"/>
+<path d="M256 78 291 166 383 129 346 221 434 256 346 291 383 383 291 346 256 434 221 346 129 383 166 291 78 256 166 221 129 129 221 166Z" fill="none" stroke="#d9c28b" stroke-width="10" stroke-linejoin="round"/>
+<circle cx="256" cy="256" r="74" fill="#d9c28b"/>
+<text x="256" y="282" text-anchor="middle" font-size="72" fill="#123f32" font-family="serif">ذ</text>
+</svg>

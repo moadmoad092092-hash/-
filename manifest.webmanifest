@@ -1,0 +1,20 @@
+{
+  "name": "أذكاري - رفيق الذكر اليومي",
+  "short_name": "أذكاري",
+  "lang": "ar",
+  "dir": "rtl",
+  "description": "مجموعة أولية من الأذكار مع المصادر والعدّاد.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbfaf6",
+  "theme_color": "#123f32",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

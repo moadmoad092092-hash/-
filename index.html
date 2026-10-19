@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123f32">
+  <meta name="description" content="أذكاري — مجموعة أولية من الأذكار من القرآن والسنة مع عدّاد ونسخ.">
+  <title>أذكاري | رفيق الذكر</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="أذكاري - الرئيسية">
+      <span class="brand-mark" aria-hidden="true">۞</span>
+      <span><strong>أذكاري</strong><small>رفيق الذكر اليومي</small></span>
+    </a>
+    <div class="header-time"><span id="clock">--:--:--</span><span id="date"></span></div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-pattern" aria-hidden="true">۞</div>
+      <p class="eyebrow">بِذِكْرِ اللهِ تَطْمَئِنُّ الْقُلُوبُ</p>
+      <h1>اجعل لسانك رطبًا بذكر الله</h1>
+      <p class="hero-copy">أذكار مختارة من القرآن الكريم والسنة، في واجهة هادئة تساعدك على القراءة والمتابعة.</p>
+      <div class="suggestion">
+        <span class="suggestion-icon" aria-hidden="true">✦</span>
+        <div><small>القسم المقترح الآن</small><strong id="suggested">أذكار عامة</strong><p id="suggestion-note">يمكنك اختيار أي قسم في أي وقت.</p></div>
+        <button id="open-suggested" class="btn btn-light" type="button">افتح القسم</button>
+      </div>
+    </section>
+
+    <section class="notice" role="note">
+      <span aria-hidden="true">ⓘ</span>
+      <p>اقتراح الوقت إرشادي بحسب ساعة جهازك، وليس حدًّا شرعيًا. يمكنك قراءة الذكر المشروع في غير الوقت المقترح أيضًا. لا يحسب الموقع أوقات الصلاة.</p>
+    </section>
+
+    <section class="section-heading">
+      <div><p class="eyebrow">اختر ما تحتاجه</p><h2>أقسام الأذكار</h2></div>
+      <span id="count-label" class="muted">مجموعة أولية موثقة</span>
+    </section>
+    <nav id="categories" class="category-grid" aria-label="أقسام الأذكار"></nav>
+
+    <section id="reader" class="reader">
+      <div class="reader-head">
+        <div><p class="eyebrow">وردك الحالي</p><h2 id="section-title">أذكار عامة</h2><p id="section-desc" class="muted"></p></div>
+        <label class="select-label">تغيير القسم
+          <select id="category-select" aria-label="اختيار قسم الأذكار"></select>
+        </label>
+      </div>
+      <div id="dhikr-list" class="dhikr-list" aria-live="polite"></div>
+      <p class="footer-note">هذه مجموعة أولية وليست موسوعة كاملة. أُدرجت المصادر بجوار كل نص، ويُرجى الرجوع إلى الطبعات المعتمدة للتحقق التفصيلي عند النشر العام.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="brand-mark" aria-hidden="true">۞</span>
+    <p>أذكاري · مشروع مجاني يعمل محليًا بعد تحميل ملفاته</p>
+    <button id="install-btn" class="btn btn-outline" hidden type="button">تثبيت الموقع</button>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="adhkar.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
